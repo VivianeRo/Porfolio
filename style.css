@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 
+
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+
+
+body{
+    margin: 0%;
+    padding: 0%;
 }
 .nav{
     width: 100%;
@@ -16,422 +18,369 @@
     display:none;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: flex-end;
-    background-color: rgb(211, 44, 180);
+    justify-content: center;
+    background-color: pink;
+    align-items: center;
+    font-family: 'Vina Sans', sans-serif;
+
     
 
+}
+.nav a{
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 1.5em;
+    color: black;
+    display: none;
+}
+.nav-contacto{
+    background-color:rgb(228, 149, 162);
+    border-radius: 10px;
+}
+.nav a:hover{
+    background-color:rgb(226, 56, 175);
+    border-radius: 10px;
 }
 @media (min-width:970px){
     .nav{
-        display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: flex-end;
-    background-color: pink;
-    padding-right: 100px;
-    }
-}
-.nav a{
-     padding-right: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    font-family: 'Edu TAS Beginner', cursive;
-
-    }
-    .nav-contacto{
-        background-color:rgb(175, 59, 98);
-        border-radius: 10px;
-        
-    }
-
-
-
-
-.introduccion{
-    width: 100%;
-    height: 400px;    
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    font-family: 'Edu TAS Beginner', cursive;
-    justify-content: flex-start;
-    align-items: center;
-    text-decoration: none;
-    
-    
-    
-    
-}
-
-@media (min-width:970px){
-    .introduccion{
         width: 100%;
-        height: 400px;    
-        display: flex;
-        justify-content: flex-start;
-        text-align: center;
-        font-family: 'Edu TAS Beginner', cursive;
-        flex-direction: column;
-        text-align: left;
-        text-decoration: none;
-        
-    }
-
-}
-.introduccion div{
-    width: 100px;
-    height: 300px;
-    display: flex;
-    justify-content: flex-start;
-    align-self: flex-start;
-    position: absolute;
-    flex-direction: column-reverse;
-    
-}
-
-.introduccion img{
-    height: 100%;
-    aspect-ratio: 16/9;
-    object-position: center;
-    object-fit: contain;
-    
-}
-.informacion-titulo{
-
-padding-top: 5px;
-}
-
-.informacion-parrafo1{
-    padding-top: 10px;
-    
-}
-.informacion-parrafo2{
-    
-font-size: 15px;
-}
-.informacion-boton{
-    width: 10opx;
-    height: 30px;
-    font-size: 10px;
-    margin-top: 100px;
-    border-radius: 10px;
-    background-color: pink;
-    border-color:pink;
-    
-    
-}
-.informacion-boton a {
-    text-decoration: none;
-    color: black;
-}
-@media (min-width:970px){
-    .informacion-titulo{
-        font-size: 30px;
-    
-    
-    }
-    
-    .informacion-parrafo1{
-        font-size: 30px;
-        padding-top: 50px;
-    }
-    .informacion-parrafo2{
-        padding-top: 50px;
-        font-size: 15px;
-    
-    }
-    .informacion-boton{
-        width: 10opx;
-        height: 30px;
-        font-size: 10px;
-        border-radius: 10px;
+        height: 100px;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         background-color: pink;
-        border-color:pink;
-        
+        align-items: center;
+        font-family: 'Vina Sans', sans-serif;
         
     }
-    .informacion-boton a {
-        text-decoration: none;
+    .nav a{
+        display: flex;
+        margin-right: 30px;
+        font-size: 1.5em;
         color: black;
     }
-    .introduccion div{
-        width: 300px;
+    .nav-contacto{
+        background-color:rgb(228, 149, 162);
+        border-radius: 10px;
+    }
+    .nav a:hover{
+        background-color:rgb(226, 56, 175);
+        border-radius: 10px;
+    }
+}
+
+.introduccion{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    
+
+}
+.intro{
+    width: 80%;
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'Vina Sans', sans-serif;
+    margin: auto;
+}
+.intro-img{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    
+}
+.intro-img img{
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    object-position: center;
+    width: 100%;
+}
+.intro-soy{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+.informacion-titulo{
+    font-size: 2rem;
+    
+}
+.informacion-parrafo1{
+    padding-top: 10px;
+    font-size: 1.5rem;
+    color: rgb(230, 97, 119);  
+    margin: 0%;
+}
+.informacion-parrafo2{
+    font-size: 15px;
+    margin: auto;
+
+}
+.informacion-boton{
+    border-radius: 20px ;
+    width: 150px;
+    height: 30px;
+    color:  rgb(230, 97, 119);
+    border: 2px solid  rgb(230, 97, 119);
+    background-color: pink;
+    
+}
+.informacion-boton a{
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+
+}
+.informacion-boton a:hover{
+    background-color:rgb(226, 56, 175);
+    border-radius: 20px;
+
+    
+}
+@media (min-width:970px){
+    
+    .introduccion{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .intro{
+        width: 80%;
+        display: flex;
+        margin-top: 100px;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        font-family: 'Vina Sans', sans-serif;
+        margin: auto;
+    }
+    .intro-soy{
+        width: 350px;
         height: 300px;
         display: flex;
-        justify-content: flex-start;
-        align-self: flex-start;
-        position: absolute;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: auto;
+        
     }
-    
-    .introduccion img{
-        height: 100%;
-        aspect-ratio: 16/9;
-        object-position: center;
-        object-fit: contain;
-}
+    .informacion-parrafo1{
+        font-size: 40px;
+    }
+
 }
 .conocimiento{
-    width: 100%;
-    height: 500px;
-    text-align: center;
-    font-family: 'Edu TAS Beginner', cursive;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    flex-wrap: wrap;
-    
+width: 100%;
+text-align: center;
+display: flex;
+flex-direction: column;
 }
 .container{
     width: 100%;
-    height: 350px;
     display: flex;
+    margin-top: auto;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
+    align-content: space-between;
     justify-content: center;
-    
-    
 
 }
-.container h2{
-    padding-top: 50px;
-    font-size: 50px;
-    
-}
 .container-foto{
+    width: 130px;
+    height: 130px;
     display: flex;
-    width: 150px;
-    height: 100px;
-    border: 1px solid black;
-    justify-content: space-around;
+    border: 2px solid black;
+    flex-direction: column;
+    margin-bottom: 20px;
     margin-right: 10px;
-    flex-wrap: wrap;
     margin-top: 20px;
-    position: relative;
-    flex-direction: row-reverse;
-    position: relative;
-    align-items: center;
-    
-    
+    justify-content: center;
+
     
 }
 .container-foto img{
     width: 100%;
-    height: 100%;
-    object-fit: contain;
     aspect-ratio: 16/9;
-    object-position: center ;
-}
-
-
-@media (min-width:970px){
-    
-    .container{
-        width: 100%;
-        height: 350px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row-reverse;
-        justify-content: center;
-        padding-top: 100px;
-        margin-bottom: 100px;
-        
-        
-    
-    }container-foto{
-        display: flex;
-        width: 150px;
-        height: 100px;
-        border: 1px solid black;
-        justify-content: space-around;
-        margin-right: 10px;
-        flex-wrap: wrap;
-        margin-top: 20px;
-        position: relative;
-        flex-direction: row-reverse;
-        position: relative;
-        align-items: center;
-        
-
-
-}.container-foto img{
-    width: 100%;
-    height: 100%;
     object-fit: contain;
-    aspect-ratio: 16/9;
     object-position: center;
 }
+@media (min-width:970px){
+    .conocimiento{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-top: 50px;
+        }
+        .conocimiento h2{
+            font-size: 2.5rem;
+        }
+        .container{
+            width: 60%;
+            display: flex;
+            margin-top: auto;
+            margin-top: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        
+        }
+        .container-foto{
+            width: 250px;
+            height: 230px;
+            display: flex;
+            border: 2px solid black;
+            justify-content: center;
+            
+        }
+        .container-foto img{
+            width: 100%;
+            aspect-ratio:16/9;
+            object-fit: contain;
+            object-position: center;
+        }
+        
 }
 .frase{
     display: flex;
-    justify-content: space-between;
     width: 100%;
-    height: 200px;
-    text-align: center;
-    font-size: 20px;
-    background-color: papayawhip;
-        
-}
-.frase h4{
-    padding-top: 20px;
-    font-size: 15px;
-}
-.frase p{
-    font-size: 20px;
+    background-color: pink;
 }
 .frase div{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    width: 80%;
-    height: 200px;
-    
-    margin-left: 50px;
     justify-content: center;
-    font-size: 20px;
+    align-items: flex-start;
+    width: 80%;
+    margin: auto;
 
+}
+.frase-img{
+    width: 50px;
+    height: 50px;
+}
+.frase-img img{
+    width: 100%;
+    object-fit: scale-down;
+    object-position: center;
+    aspect-ratio: 16/9;
+}
+blockquote{
+    font-size:2.5rem;
+    
+    text-align: center;
+}
+blockquote h4{
+    font-size: 1.8rem;
+    padding-top: 10px;
 }
 @media (min-width:970px){
     .frase{
+        display: flex;
         width: 100%;
-        height: 200px;
-        margin-top: 10px;
-        text-align: center;
-        background-color: papayawhip;
-        
-
-}
+        background-color: pink;
+    }
     .frase div{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    width: 100%;
-    height: 200px;
-    font-size: 30px;
-    position: relative;
-    justify-content: center;
-    font-size: 10px;
-    align-items: flex-start;
-}
-    .frase p{
-        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        width: 80%;
+        margin: auto;
     
     }
-    .frase h4{
-        font-size: 30px;
+    .frase-img{
+        width: 50px;
+        height: 50px;
     }
-
+    .frase-img img{
+        width: 100%;
+        object-fit: scale-down;
+        object-position: center;
+        aspect-ratio: 16/9;
+    }
+    blockquote{
+        font-size:2.5rem;
+    }
+    blockquote h4{
+        font-size: 1.8rem;
+        padding-top: 10px;
+        
+    }
 }
 .proyectos{
     width: 100%;
     display: flex;
-    display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
-    margin-top: 10px;
-
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+    
+    
 }
 .proyecto-container{
     width: 80%;
     display: flex;
-    flex-direction: row-reverse;
+    margin-right: 20px;
     flex-wrap: wrap;
-    justify-content:center;
-    align-self: center;
-    position: relative;
-    margin-top: 10px;
-    align-content: flex-start;
-    
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+
 }
 .cuadro{
-    width: 350px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     display: flex;
-    flex-direction: row-reverse;
-    display: flex;
-    flex-direction: row-reverse;
-    padding-left: 5px;
-    justify-content: center;
-    padding-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
     border: 1px solid pink;
-    padding-bottom: 30px;
-    text-align: center;
-    margin-top: 30px;
     margin-right: 20px;
-    border-radius: 10px;
-    background-color:papayawhip;
-
+    margin-top: 20px;
+    background-color: pink;
+}
+.cuadro img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    object-position: center;
 }
 .cuadro a{
     text-decoration: none;
-    color: black;
+    color:black;
+    
 }
-.proyecto-container img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center ;
-    aspect-ratio: 16/9;
+.proyectos h2{
+    font-size: 3rem;
+    margin-bottom: 40px;
+    
+}
+.proyectos p{
+    font-size: 1rem;
 }
 @media (min-width:970px){
     .proyectos{
         width: 100%;
         display: flex;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
-        margin-top: 10px;
-    
-    }
-    .proyecto-container{
-        width: 80%;
-        display: flex;
-        flex-direction: row-reverse;
         flex-wrap: wrap;
-        justify-content:flex-end;
-        align-self: center;
-        position: relative;
-        margin-top: 10px;
-        align-content: flex-start;
-        
-    }
-    .cuadro{
-        width: 250px;
-        height: 150px;
-        display: flex;
-        flex-direction: row-reverse;
-        display: flex;
-        flex-direction: row-reverse;
-        padding-left: 5px;
         justify-content: center;
-        padding-top: 20px;
-        border: 1px solid pink;
-        padding-bottom: 30px;
-        text-align: center;
-        margin-top: 30px;
-        margin-right: 20px;
-        border-radius: 10px;
-        background-color:papayawhip;
-    
+        align-items: center;
     }
-    .cuadro a{
-        text-decoration: none;
-        color: black;
-    }
-    .proyecto-container img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center ;
-        aspect-ratio: 16/9;
-    }
-
 }
