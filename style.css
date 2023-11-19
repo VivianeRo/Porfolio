@@ -11,6 +11,7 @@
 body{
     margin: 0%;
     padding: 0%;
+    max-width: 100;
 }
 .nav{
     width: 100%;
@@ -257,6 +258,8 @@ flex-direction: column;
     display: flex;
     width: 100%;
     background-color: pink;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 .frase div{
     display: flex;
@@ -383,4 +386,101 @@ blockquote h4{
         justify-content: center;
         align-items: center;
     }
+}
+.contactame{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: row;
+    padding-top: 100px;
+    border-radius: 20px;
+    margin: auto;
+    
+    
+}
+.contactame-container{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 80%;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+.redes{
+    width: 50%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    border-radius: 20px;
+    background-color: #f9f6f6;
+
+    
+}
+.redes h2{
+    font-size: 40px;
+    margin-bottom: 2.5rem;
+}
+
+.redes-iconos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+    
+}
+.redes-iconos img{
+    width: 18px;
+    height: 18px;
+    display: flex;
+}
+.redes-iconos img img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    object-position: center;
+}
+.redes-iconos a{
+    display: flex;
+    text-decoration: none;
+    padding-bottom: 20px;
+    color: rgb(226, 56, 175);
+}
+.formulario{
+    display: block;
+    width: 50%;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #f9f6f6;
+}
+.formulario h2{
+    font-size: 2.5rem;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+}
+input{
+    border-radius: 10px;
+    width: 150px;
+    margin-right: 5px;
+    border-color: rgb(177, 169, 169);
+    
+}
+.formulario-nombre{
+    display: flex;
+    margin-top: 10px;
+}
+.formulario-nombre label{
+    margin-right: 2px;
+
+}
+.formulario-email{
+    display: flex;
 }
