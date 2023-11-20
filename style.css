@@ -386,43 +386,430 @@ blockquote h4{
         justify-content: center;
         align-items: center;
     }
+}*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.contactame{
+
+
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+
+
+body{
+    margin: 0%;
+    padding: 0%;
+    max-width: 100;
+}
+.nav{
+    width: 100%;
+    height: 100px;
+    display:none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: pink;
+    align-items: center;
+    font-family: 'Vina Sans', sans-serif;
+
+    
+
+}
+.nav a{
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 1.5em;
+    color: black;
+    display: none;
+}
+.nav-contacto{
+    background-color:rgb(228, 149, 162);
+    border-radius: 10px;
+}
+.nav a:hover{
+    background-color:rgb(226, 56, 175);
+    border-radius: 10px;
+}
+@media (min-width:970px){
+    .nav{
+        width: 100%;
+        height: 100px;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: pink;
+        align-items: center;
+        font-family: 'Vina Sans', sans-serif;
+        
+    }
+    .nav a{
+        display: flex;
+        margin-right: 30px;
+        font-size: 1.5em;
+        color: black;
+    }
+    .nav-contacto{
+        background-color:rgb(228, 149, 162);
+        border-radius: 10px;
+    }
+    .nav a:hover{
+        background-color:rgb(226, 56, 175);
+        border-radius: 10px;
+    }
+}
+
+.introduccion{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    
+
+}
+.intro{
     width: 80%;
     display: flex;
-    justify-content: flex-start;
+    margin-top: 100px;
+    flex-direction: column;
+    justify-content: center;
     align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'Vina Sans', sans-serif;
+    margin: auto;
+}
+.intro-img{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    
+}
+.intro-img img{
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    object-position: center;
+    width: 100%;
+}
+.intro-soy{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+.informacion-titulo{
+    font-size: 2rem;
+    
+}
+.informacion-parrafo1{
+    padding-top: 10px;
+    font-size: 1.5rem;
+    color: rgb(230, 97, 119);  
+    margin: 0%;
+}
+.informacion-parrafo2{
+    font-size: 15px;
+    margin: auto;
+
+}
+.informacion-boton{
+    border-radius: 20px ;
+    width: 150px;
+    height: 30px;
+    color:  rgb(230, 97, 119);
+    border: 2px solid  rgb(230, 97, 119);
+    background-color: pink;
+    
+}
+.informacion-boton a{
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+
+}
+.informacion-boton a:hover{
+    background-color:rgb(226, 56, 175);
+    border-radius: 20px;
+
+    
+}
+@media (min-width:970px){
+    
+    .introduccion{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .intro{
+        width: 80%;
+        display: flex;
+        margin-top: 100px;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        font-family: 'Vina Sans', sans-serif;
+        margin: auto;
+    }
+    .intro-soy{
+        width: 350px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: auto;
+        
+    }
+    .informacion-parrafo1{
+        font-size: 40px;
+    }
+
+}
+.conocimiento{
+width: 100%;
+text-align: center;
+display: flex;
+flex-direction: column;
+}
+.container{
+    width: 100%;
+    display: flex;
+    margin-top: auto;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+
+}
+.container-foto{
+    width: 130px;
+    height: 130px;
+    display: flex;
+    border: 2px solid black;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-top: 20px;
+    justify-content: center;
+
+    
+}
+.container-foto img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    object-position: center;
+}
+@media (min-width:970px){
+    .conocimiento{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-top: 50px;
+        }
+        .conocimiento h2{
+            font-size: 2.5rem;
+        }
+        .container{
+            width: 60%;
+            display: flex;
+            margin-top: auto;
+            margin-top: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        
+        }
+        .container-foto{
+            width: 250px;
+            height: 230px;
+            display: flex;
+            border: 2px solid black;
+            justify-content: center;
+            
+        }
+        .container-foto img{
+            width: 100%;
+            aspect-ratio:16/9;
+            object-fit: contain;
+            object-position: center;
+        }
+        
+}
+.frase{
+    display: flex;
+    width: 100%;
+    background-color: pink;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.frase div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    margin: auto;
+
+}
+.frase-img{
+    width: 50px;
+    height: 50px;
+}
+.frase-img img{
+    width: 100%;
+    object-fit: scale-down;
+    object-position: center;
+    aspect-ratio: 16/9;
+}
+blockquote{
+    font-size:2.5rem;
+    
+    text-align: center;
+}
+blockquote h4{
+    font-size: 1.8rem;
+    padding-top: 10px;
+}
+@media (min-width:970px){
+    .frase{
+        display: flex;
+        width: 100%;
+        background-color: pink;
+    }
+    .frase div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        width: 80%;
+        margin: auto;
+    
+    }
+    .frase-img{
+        width: 50px;
+        height: 50px;
+    }
+    .frase-img img{
+        width: 100%;
+        object-fit: scale-down;
+        object-position: center;
+        aspect-ratio: 16/9;
+    }
+    blockquote{
+        font-size:2.5rem;
+    }
+    blockquote h4{
+        font-size: 1.8rem;
+        padding-top: 10px;
+        
+    }
+}
+.proyectos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+    
+    
+}
+.proyecto-container{
+    width: 80%;
+    display: flex;
+    margin-right: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+
+}
+.cuadro{
+    width: 300px;
+    height: 300px;
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    border: 1px solid pink;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: pink;
+}
+.cuadro img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    object-position: center;
+}
+.cuadro a{
+    text-decoration: none;
+    color:black;
+    
+}
+.proyectos h2{
+    font-size: 3rem;
+    margin-bottom: 40px;
+    
+}
+.proyectos p{
+    font-size: 1rem;
+}
+@media (min-width:970px){
+    .proyectos{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.contactame{
+    
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
     padding-top: 100px;
     border-radius: 20px;
-    margin: auto;
+    
+    
+    
     
     
 }
 .contactame-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: auto;
-    width: 80%;
+    width: 90%;
     justify-content: center;
     border-radius: 10px;
     
 }
 .redes{
-    width: 50%;
-    border: 1px solid black;
+
+    
     display: flex;
+    width: 100%;
     flex-direction: column;
     margin-right: 10px;
     border-radius: 20px;
     background-color: #f9f6f6;
+       
+}
 
-    
-}
-.redes h2{
-    font-size: 40px;
-    margin-bottom: 2.5rem;
-}
+
 
 .redes-iconos{
     display: flex;
@@ -449,38 +836,265 @@ blockquote h4{
     color: rgb(226, 56, 175);
 }
 .formulario{
-    display: block;
-    width: 50%;
-    justify-content: center;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    border: 1px solid black;
     border-radius: 20px;
     background-color: #f9f6f6;
-}
-.formulario h2{
-    font-size: 2.5rem;
-}
-form{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    flex-wrap: wrap;
-}
-input{
-    border-radius: 10px;
-    width: 150px;
-    margin-right: 5px;
-    border-color: rgb(177, 169, 169);
-    
-}
-.formulario-nombre{
-    display: flex;
-    margin-top: 10px;
-}
-.formulario-nombre label{
-    margin-right: 2px;
+
 
 }
-.formulario-email{
+.formulario h2{
+    font-size: 1.5rem;
+}
+
+.formulario-contacto{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.formulario-nombre{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-right: 10px;
+
+}
+.formulario-nombre label{
+    padding-left: 10px;
+}
+.formulario-nombre input{
+    height: 30px;
+    border-radius: 20px;
+    border-color: #f9f6f6 ;
+}
+.formulario-apellido{
+    display: flex;
+    flex-direction: column;
+
+}
+.formulario-apellido label{
+    margin-left: 10px;
     display: flex;
 }
+.formulario-apellido input{
+    height: 30px;
+    border-radius: 20px;
+    border-color: #f9f6f6 ;
+    
+}
+
+
+.formulario-email{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.formulario-email input{
+    height: 30px;
+    border-radius: 20px;
+    border-color: #f9f6f6 ;
+    width: 80%;
+    
+}
+.formulario-mensaje{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.formulario-mensaje input{
+    width: 100%;
+    border-radius: 20px;
+    border-color: #f9f6f6 ;
+    height: 100px;
+}
+.enviar{
+    margin-top: 20px;
+    background-color:pink;
+    color: black;
+    border-radius: 10px;
+    font-weight: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    
+}
+@media (min-width:900px) 
+
+{
+    .contactame{
+    
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        padding-top: 100px;
+        border-radius: 20px;
+        margin: auto;
+    
+        
+    }
+
+        
+    
+    
+    .contactame-container{
+            display: flex;
+           flex-direction: row;
+            margin: auto;
+            width: 80%;
+            justify-content: center;
+            border-radius: 10px;
+            
+            
+        }
+    .redes{
+            
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            margin-right: 10px;
+            border-radius: 20px;
+            background-color: #f9f6f6;
+        
+            
+        }
+    .redes h2{
+            font-size: 40px;
+            margin-bottom: 2.5rem;
+        }
+        
+    .redes-iconos{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 30px;
+            
+        }
+    .redes-iconos img{
+            width: 18px;
+            height: 18px;
+            display: flex;
+        }
+    .redes-iconos img img{
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: contain;
+            object-position: center;
+        }
+    .redes-iconos a{
+            display: flex;
+            text-decoration: none;
+            padding-bottom: 20px;
+            color: rgb(226, 56, 175);
+        }
+    .formulario{
+            display: flex;
+            width: 100%;
+            
+            flex-wrap: wrap;
+            border-radius: 20px;
+            background-color: #f9f6f6;
+        }
+        .formulario h2{
+            font-size: 2.5rem;
+        }
+        
+        .formulario-contacto{
+            display: flex;
+            width: 80%;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        
+        
+        .formulario-nombre{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            margin-right: 10px;
+        
+        }
+        .formulario-nombre label{
+            padding-left: 10px;
+        
+        }
+        .formulario-nombre input{
+            height: 30px;
+            border-radius: 20px;
+            border-color: #f9f6f6 ;
+            margin-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .formulario-apellido{
+            display: flex;
+            flex-direction: column;
+        
+        }
+        .formulario-apellido label{
+            margin-left: 10px;
+            display: flex;
+        }
+        .formulario-apellido input{
+            height: 30px;
+            border-radius: 20px;
+            border-color: #f9f6f6 ;
+            margin-bottom: 10px;
+        }
+        
+        
+        .formulario-email{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .formulario-email input{
+            height: 30px;
+            border-radius: 20px;
+            border-color: #f9f6f6 ;
+            width: 80%;
+        }
+        .formulario-mensaje{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        
+        }
+        .formulario-mensaje input{
+            width: 100%;
+            border-radius: 20px;
+            border-color: #f9f6f6 ;
+            
+        }
+    
+    .enviar{
+        background-color:pink;
+        color:black;
+        border-radius: 30px;
+        font-weight: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 100px;
+        height: 40px;
+        display: flex;
+        
+        
+        
+
+    }
+    
+}
+

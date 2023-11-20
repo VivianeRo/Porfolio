@@ -153,27 +153,37 @@
           </div>
           <div class="formulario">
             <h2>Escribime</h2>
-            <form>
-            <div class="formulario-nombre">
-             
+            
+            <form action="https://submit-form.com/dZv3lZKLnN2eByG6HXaMj" method="POST" class="formulario-contacto">
+
+             <div class="formulario-nombre">
                 <label for="nombre">Nombre:</label>
                 <input type="text" name="Nombre"
-                class="nombre" 
-                placeholder="Escriba su nombre">
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="Apellido"
-                class="nombre" 
-                placeholder="Escriba su apellido">
-                
-                
-            
+                class="nombre" id="primer-nombre"
+                placeholder="Escriba su nombre" required=""> 
+               
             </div>
-            <div class="formulari-email">
+            <div class=" formulario-apellido">
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido"
+                class="apellido1" id="apellido1"
+                placeholder="Escriba su apellido " required="">
+                
+            </div>
+            <div class="formulario-email">
                 <label for="email">Email:</label>
                 <input type="email" name="email"
-                class="nombre" 
-                placeholder="Escriba su email">
+                class="email" id="imail1" 
+                placeholder="Escriba su email" required="">
             </div>
+            <div class="formulario-mensaje">
+                <label for="mensale">Mensaje:</label>
+                <input type="text" name="mensaje"
+                class="mensaje1" id="mensaje1" 
+                placeholder="Escriba su apellido">
+                
+            </div>
+            <button type="submit" class="enviar"> Enviar </button>
             </form>
         </div>
       </section>
