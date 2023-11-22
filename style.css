@@ -1,9 +1,10 @@
+/*Selector universal*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/*Fuente de letra utilizda en el proyecto*/
 
 @import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
 
@@ -11,8 +12,9 @@
 body{
     margin: 0%;
     padding: 0%;
-    max-width: 100;
+
 }
+/*Estilado de nav*/
 .nav{
     width: 100%;
     height: 100px;
@@ -42,6 +44,7 @@ body{
     background-color:rgb(226, 56, 175);
     border-radius: 10px;
 }
+/*@media de nav*/
 @media (min-width:970px){
     .nav{
         width: 100%;
@@ -70,7 +73,7 @@ body{
         border-radius: 10px;
     }
 }
-
+/*estilado de la presentacion*/
 .introduccion{
     display: flex;
     justify-content: center;
@@ -149,6 +152,7 @@ body{
 
     
 }
+/*@media de la presentacion*/
 @media (min-width:970px){
     
     .introduccion{
@@ -185,6 +189,7 @@ body{
     }
 
 }
+/*seccion conocimientos*/
 .conocimiento{
 width: 100%;
 text-align: center;
@@ -219,6 +224,7 @@ flex-direction: column;
     object-fit: contain;
     object-position: center;
 }
+/*@media de conocimiento*/
 @media (min-width:970px){
     .conocimiento{
         width: 100%;
@@ -254,6 +260,7 @@ flex-direction: column;
         }
         
 }
+/*seccion frase*/
 .frase{
     display: flex;
     width: 100%;
@@ -290,6 +297,7 @@ blockquote h4{
     font-size: 1.8rem;
     padding-top: 10px;
 }
+/*@media de frase*/
 @media (min-width:970px){
     .frase{
         display: flex;
@@ -325,6 +333,7 @@ blockquote h4{
         
     }
 }
+/*seccion de mis proyectos*/
 .proyectos{
     width: 100%;
     display: flex;
@@ -378,394 +387,7 @@ blockquote h4{
 .proyectos p{
     font-size: 1rem;
 }
-@media (min-width:970px){
-    .proyectos{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-}*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
-
-
-body{
-    margin: 0%;
-    padding: 0%;
-    max-width: 100;
-}
-.nav{
-    width: 100%;
-    height: 100px;
-    display:none;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: pink;
-    align-items: center;
-    font-family: 'Vina Sans', sans-serif;
-
-    
-
-}
-.nav a{
-    text-decoration: none;
-    margin-right: 30px;
-    font-size: 1.5em;
-    color: black;
-    display: none;
-}
-.nav-contacto{
-    background-color:rgb(228, 149, 162);
-    border-radius: 10px;
-}
-.nav a:hover{
-    background-color:rgb(226, 56, 175);
-    border-radius: 10px;
-}
-@media (min-width:970px){
-    .nav{
-        width: 100%;
-        height: 100px;
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        background-color: pink;
-        align-items: center;
-        font-family: 'Vina Sans', sans-serif;
-        
-    }
-    .nav a{
-        display: flex;
-        margin-right: 30px;
-        font-size: 1.5em;
-        color: black;
-    }
-    .nav-contacto{
-        background-color:rgb(228, 149, 162);
-        border-radius: 10px;
-    }
-    .nav a:hover{
-        background-color:rgb(226, 56, 175);
-        border-radius: 10px;
-    }
-}
-
-.introduccion{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    
-
-}
-.intro{
-    width: 80%;
-    display: flex;
-    margin-top: 100px;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    font-family: 'Vina Sans', sans-serif;
-    margin: auto;
-}
-.intro-img{
-    width: 300px;
-    height: 300px;
-    display: flex;
-    
-}
-.intro-img img{
-    object-fit: cover;
-    aspect-ratio: 16/9;
-    object-position: center;
-    width: 100%;
-}
-.intro-soy{
-    width: 350px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: auto;
-}
-.informacion-titulo{
-    font-size: 2rem;
-    
-}
-.informacion-parrafo1{
-    padding-top: 10px;
-    font-size: 1.5rem;
-    color: rgb(230, 97, 119);  
-    margin: 0%;
-}
-.informacion-parrafo2{
-    font-size: 15px;
-    margin: auto;
-
-}
-.informacion-boton{
-    border-radius: 20px ;
-    width: 150px;
-    height: 30px;
-    color:  rgb(230, 97, 119);
-    border: 2px solid  rgb(230, 97, 119);
-    background-color: pink;
-    
-}
-.informacion-boton a{
-    color: black;
-    text-decoration: none;
-    font-size: 1rem;
-
-}
-.informacion-boton a:hover{
-    background-color:rgb(226, 56, 175);
-    border-radius: 20px;
-
-    
-}
-@media (min-width:970px){
-    
-    .introduccion{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        margin: auto;
-        margin-top: 50px;
-    }
-    .intro{
-        width: 80%;
-        display: flex;
-        margin-top: 100px;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-        font-family: 'Vina Sans', sans-serif;
-        margin: auto;
-    }
-    .intro-soy{
-        width: 350px;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        margin: auto;
-        
-    }
-    .informacion-parrafo1{
-        font-size: 40px;
-    }
-
-}
-.conocimiento{
-width: 100%;
-text-align: center;
-display: flex;
-flex-direction: column;
-}
-.container{
-    width: 100%;
-    display: flex;
-    margin-top: auto;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: center;
-
-}
-.container-foto{
-    width: 130px;
-    height: 130px;
-    display: flex;
-    border: 2px solid black;
-    flex-direction: column;
-    margin-bottom: 20px;
-    margin-right: 10px;
-    margin-top: 20px;
-    justify-content: center;
-
-    
-}
-.container-foto img{
-    width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: contain;
-    object-position: center;
-}
-@media (min-width:970px){
-    .conocimiento{
-        width: 100%;
-        text-align: center;
-        align-items: center;
-        margin-top: 50px;
-        }
-        .conocimiento h2{
-            font-size: 2.5rem;
-        }
-        .container{
-            width: 60%;
-            display: flex;
-            margin-top: auto;
-            margin-top: 40px;
-            flex-wrap: wrap;
-            justify-content: center;
-        
-        }
-        .container-foto{
-            width: 250px;
-            height: 230px;
-            display: flex;
-            border: 2px solid black;
-            justify-content: center;
-            
-        }
-        .container-foto img{
-            width: 100%;
-            aspect-ratio:16/9;
-            object-fit: contain;
-            object-position: center;
-        }
-        
-}
-.frase{
-    display: flex;
-    width: 100%;
-    background-color: pink;
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-.frase div{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    width: 80%;
-    margin: auto;
-
-}
-.frase-img{
-    width: 50px;
-    height: 50px;
-}
-.frase-img img{
-    width: 100%;
-    object-fit: scale-down;
-    object-position: center;
-    aspect-ratio: 16/9;
-}
-blockquote{
-    font-size:2.5rem;
-    
-    text-align: center;
-}
-blockquote h4{
-    font-size: 1.8rem;
-    padding-top: 10px;
-}
-@media (min-width:970px){
-    .frase{
-        display: flex;
-        width: 100%;
-        background-color: pink;
-    }
-    .frase div{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
-        width: 80%;
-        margin: auto;
-    
-    }
-    .frase-img{
-        width: 50px;
-        height: 50px;
-    }
-    .frase-img img{
-        width: 100%;
-        object-fit: scale-down;
-        object-position: center;
-        aspect-ratio: 16/9;
-    }
-    blockquote{
-        font-size:2.5rem;
-    }
-    blockquote h4{
-        font-size: 1.8rem;
-        padding-top: 10px;
-        
-    }
-}
-.proyectos{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    flex-direction: column;
-    
-    
-}
-.proyecto-container{
-    width: 80%;
-    display: flex;
-    margin-right: 20px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
-
-}
-.cuadro{
-    width: 300px;
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    border: 1px solid pink;
-    margin-right: 20px;
-    margin-top: 20px;
-    background-color: pink;
-}
-.cuadro img{
-    width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: contain;
-    object-position: center;
-}
-.cuadro a{
-    text-decoration: none;
-    color:black;
-    
-}
-.proyectos h2{
-    font-size: 3rem;
-    margin-bottom: 40px;
-    
-}
-.proyectos p{
-    font-size: 1rem;
-}
+/*@media de mis proyectos*/
 @media (min-width:970px){
     .proyectos{
         width: 100%;
@@ -775,6 +397,7 @@ blockquote h4{
         align-items: center;
     }
 }
+/*seccion de donde contactame tambien incluye formulario*/
 .contactame{
     
     display: flex;
@@ -842,6 +465,7 @@ blockquote h4{
     flex-wrap: wrap;
     border-radius: 20px;
     background-color: #f9f6f6;
+    margin-top: 20px;
 
 
 }
@@ -866,7 +490,8 @@ blockquote h4{
 
 }
 .formulario-nombre label{
-    padding-left: 10px;
+    margin-top: 10px;
+    display: flex;
 }
 .formulario-nombre input{
     height: 30px;
@@ -879,8 +504,8 @@ blockquote h4{
 
 }
 .formulario-apellido label{
-    margin-left: 10px;
     display: flex;
+    margin-top: 10px;
 }
 .formulario-apellido input{
     height: 30px;
@@ -895,6 +520,10 @@ blockquote h4{
     flex-direction: column;
     width: 100%;
 }
+.formulario-email label{
+    display: flex;
+    margin-top: 10px;
+}
 .formulario-email input{
     height: 30px;
     border-radius: 20px;
@@ -907,6 +536,9 @@ blockquote h4{
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+}
+.formulario-mensaje{
+    margin-top: 10px;
 }
 .formulario-mensaje input{
     width: 100%;
@@ -929,6 +561,7 @@ blockquote h4{
     display: flex;
     
 }
+/*@media de contactame tambien incluye formulario*/
 @media (min-width:900px) 
 
 {
@@ -1097,4 +730,100 @@ blockquote h4{
     }
     
 }
+/*ultima seccion del proyecto*/
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 20px;
+    background-color: pink;
+    color: black;
+    height: 250px;
+}
+
+.nav-fo{
+    display: none;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.nav-fo a{
+    text-decoration: none;
+    padding-right: 15px;
+    color: #b14262;;
+}
+.logo-redes{
+    display: flex;
+    width: 80%;
+
+} 
+.logo-redes{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.logo-redes span{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ef5973;;
+}
+.logo-redes img{
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 16/9;
+    width: 60%;
+}
+footer p{
+    margin: auto;
+}
+/*@media de footer*/
+@media (min-width:900px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        margin-top: 20px;
+        background-color: pink;
+        color: black;
+        height: 250px;
+    }
+    
+    .nav-fo{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+    .nav-fo a{
+        text-decoration: none;
+        padding-right: 15px;
+        color: #b14262;;
+    }
+    .logo-redes{
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        margin: auto;
+    
+    }
+    .palabra{
+        margin: auto;
+    
+}
+
+}
+
 
