@@ -10,10 +10,12 @@
   <body>
   <!--Inicio del nav-->
     <nav class="nav">
-      <a href="#introduccion"> Hola</a>
-      <a href="#conocimiento">Conocimiento </a>
-      <a href="#proyectos">Proyecto</a>
-      <a href="#contactos"   class="nav-contacto">Contacto</a>
+      <ul>
+      <li><a href="#introduccion"> Hola</a></li>
+      <li><a href="#conocimiento">Conocimientos </a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contactos"   class="nav-contacto">Contacto</a></li>
+      </ul>
     </nav>
     <!--Inicializacion del main donde adentro va esta las secciones que voy esta utilizando-->
     <main>
@@ -165,28 +167,28 @@
              <div class="formulario-nombre">
                 <label for="nombre">Nombre:</label>
                 <input type="text" name="Nombre"
-                class="nombre" id="primer-nombre"
+                class="nombre" id="nombre"
                 placeholder="Escriba su nombre" required=""> 
                
             </div>
             <div class=" formulario-apellido">
                 <label for="apellido">Apellido:</label>
                 <input type="text" name="apellido"
-                class="apellido1" id="apellido1"
+                class="apellido" id="apellido"
                 placeholder="Escriba su apellido " required="">
                 
             </div>
             <div class="formulario-email">
                 <label for="email">Email:</label>
                 <input type="email" name="email"
-                class="email" id="imail1" 
+                class="email" id="imail" 
                 placeholder="Escriba su email" required="">
             </div>
             <div class="formulario-mensaje">
-                <label for="mensale">Mensaje:</label>
-                <input type="text" name="mensaje"
-                class="mensaje1" id="mensaje1" 
-                placeholder="Escriba su apellido">
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" cols="30" rows="10"
+                class="mensaje" id="mensaje" 
+                placeholder="Escriba su mensaja aqui"></textarea>
                 
             </div>
             <button type="submit" class="enviar"> Enviar </button>
@@ -195,21 +197,27 @@
       </section>
       <!--Finalizaccion de proyecto porfolio ademas incluye link de contacto y quien lo hizo-->
       <footer>
+        
         <nav class="nav-fo">
-          <a href="#introduccion"> Hola</a>
-          <a href="#conocimiento">Conocimiento </a>
-          <a href="#proyectos">Proyecto</a>
-          <a href="#contacto">Contacto</a>
+          <ul>
+                 
+              <li> <a href="#introduccion"> Hola</a></li>
+              <li> <a href="#conocimiento">Conocimiento </a></li>
+              <li> <a href="#proyectos">Proyecto</a></li>
+              <li> <a href="#contacto">Contacto</a></li>
+            
+         </ul>
         </nav>
 
         <div class="logo-redes">
+          <ul>
         
-           <a href="https://mail.google.com/mail/u/0/#inbox"><img src="iconos/icons8-gmail.svg" alt="Logo de gmail" /></a>
+           <li><a href="https://mail.google.com/mail/u/0/#inbox"><img src="iconos/icons8-gmail.svg" alt="Logo de gmail" /></a></li>
           
-            <a href="https://github.com/VivianeRo"><img src="iconos/icons8-github.svg" alt="Logo de github"/></a>
+           <li> <a href="https://github.com/VivianeRo"><img src="iconos/icons8-github.svg" alt="Logo de github"/></a></li>
           
-           <a href="https://www.linkedin.com/in/viviane-rodr%C3%ADguez-b85716264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="iconos/icons8-linkedin.svg" alt="Logo de linkedin" /></a>
-           
+           <li><a href="https://www.linkedin.com/in/viviane-rodr%C3%ADguez-b85716264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="iconos/icons8-linkedin.svg" alt="Logo de linkedin" /></a></li>
+          </ul>
         </div>
         <div class="palabra">
           <p>" Hecho con ❤️ por Viviane"</p>

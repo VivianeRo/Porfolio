@@ -5,7 +5,7 @@ A continuacion se ve lo que se encuentra el el porfolio y imagenes de la misma(l
 
 ## Menu de encabezado
 El menu de inicio cuenta con tres opciones donde al seleccionarlo te lleva al lugar que desea ,ej:si queres saber donde contactame haces click en contacto y te lleva a la seccion de contacto donde se encuentra mi email  
-¡[imagen del inicio del porfolo](imagenes.md/Captura%20web_22-11-2023_155829_127.0.0.1.jpeg)
+¡[imagen del inicio del porfolio](imagenes.md/Captura%20web_22-11-2023_155829_127.0.0.1.jpeg)
 
 ## Presentacion
 En esta seccion hago mi presentacion  y tambien hay una imagen en representacion del porfolio 

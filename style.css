@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    
 }
 /*Fuente de letra utilizda en el proyecto*/
 
@@ -12,6 +14,8 @@
 body{
     margin: 0%;
     padding: 0%;
+    font-family: 'Vina Sans', sans-serif;
+    
 
 }
 /*Estilado de nav*/
@@ -25,6 +29,7 @@ body{
     background-color: pink;
     align-items: center;
     font-family: 'Vina Sans', sans-serif;
+    
 
     
 
@@ -49,13 +54,14 @@ body{
     .nav{
         width: 100%;
         height: 100px;
-        display:flex;
+        display:inline-block;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         background-color: pink;
         align-items: center;
         font-family: 'Vina Sans', sans-serif;
+    
         
     }
     .nav a{
@@ -72,6 +78,11 @@ body{
         background-color:rgb(226, 56, 175);
         border-radius: 10px;
     }
+    nav ul{
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+    }
 }
 /*estilado de la presentacion*/
 .introduccion{
@@ -79,6 +90,7 @@ body{
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    font-family: 'Vina Sans', sans-serif;
     
 
 }
@@ -115,6 +127,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     margin: auto;
+    padding-block: 20px;
 }
 .informacion-titulo{
     font-size: 2rem;
@@ -195,6 +208,7 @@ width: 100%;
 text-align: center;
 display: flex;
 flex-direction: column;
+
 }
 .container{
     width: 100%;
@@ -203,6 +217,8 @@ flex-direction: column;
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: center;
+    
+
 
 }
 .container-foto{
@@ -441,6 +457,7 @@ blockquote h4{
     margin-top: 30px;
     
 }
+
 .redes-iconos img{
     width: 18px;
     height: 18px;
@@ -497,6 +514,7 @@ blockquote h4{
     height: 30px;
     border-radius: 20px;
     border-color: #f9f6f6 ;
+    margin-top: 10px;
 }
 .formulario-apellido{
     display: flex;
@@ -511,6 +529,7 @@ blockquote h4{
     height: 30px;
     border-radius: 20px;
     border-color: #f9f6f6 ;
+    margin-top: 10px;
     
 }
 
@@ -529,6 +548,7 @@ blockquote h4{
     border-radius: 20px;
     border-color: #f9f6f6 ;
     width: 80%;
+    margin-top: 10px;
     
 }
 .formulario-mensaje{
@@ -537,16 +557,18 @@ blockquote h4{
     flex-wrap: wrap;
     width: 100%;
 }
-.formulario-mensaje{
+.formulario-mensaje label{
     margin-top: 10px;
 }
 .formulario-mensaje input{
     width: 100%;
     border-radius: 20px;
     border-color: #f9f6f6 ;
-    height: 100px;
+    height: 30px;
+    margin-top: 10px;
 }
-.enviar{
+
+  .enviar{
     margin-top: 20px;
     background-color:pink;
     color: black;
@@ -630,13 +652,19 @@ blockquote h4{
             padding-bottom: 20px;
             color: rgb(226, 56, 175);
         }
+    
+        
     .formulario{
             display: flex;
             width: 100%;
-            
+            justify-content: flex-start;
             flex-wrap: wrap;
             border-radius: 20px;
             background-color: #f9f6f6;
+            
+        
+        
+        
         }
         .formulario h2{
             font-size: 2.5rem;
@@ -696,22 +724,29 @@ blockquote h4{
             height: 30px;
             border-radius: 20px;
             border-color: #f9f6f6 ;
-            width: 80%;
+            margin-top: 10px;
         }
+        
         .formulario-mensaje{
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
         
         }
-        .formulario-mensaje input{
+        .formulario-mensaje {
             width: 100%;
             border-radius: 20px;
             border-color: #f9f6f6 ;
+            margin-top: 10px;
             
         }
+        textarea{
+            border-radius: 10px;
+            display: flex;
+            margin-top: 10px;
+        }
     
-    .enviar{
+        .enviar{
         background-color:pink;
         color:black;
         border-radius: 30px;
@@ -728,6 +763,7 @@ blockquote h4{
         
 
     }
+
     
 }
 /*ultima seccion del proyecto*/
@@ -785,6 +821,10 @@ footer{
 footer p{
     margin: auto;
 }
+.logo-redes ul{
+    list-style-type: none;
+    display: flex;
+}
 /*@media de footer*/
 @media (min-width:900px){
     footer{
@@ -823,7 +863,23 @@ footer p{
         margin: auto;
     
 }
-
+.logo-redes ul{
+    list-style-type: none;
+}
+textarea{
+    border-radius: 10px;
+    display: flex;
 }
 
+}
+.formulario{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background-color: #f9f6f6;
+    
 
+
+}
