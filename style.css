@@ -1,17 +1,16 @@
 /*Selector universal*/
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Poppins:ital,wght@1,200&family=Vina+Sans&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/*Fuente de letra utilizda en el proyecto*/
 
-@import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
+
 
 body {
-  margin: 0%;
-  padding: 0%;
-  font-family: "Vina Sans", sans-serif;
+
+    font-family: 'Nova Square', sans-serif;
 }
 /*Estilado de nav*/
 .nav {
@@ -43,7 +42,7 @@ body {
 /*@media de nav*/
 @media (min-width: 970px) {
   .nav {
-    width: 100%;
+    
     height: 100px;
     display: inline-block;
     flex-direction: row;
@@ -71,6 +70,7 @@ body {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
+    padding-block: 40px;
   }
 }
 /*estilado de la presentacion*/
@@ -78,8 +78,9 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
-  font-family: "Vina Sans", sans-serif;
+
+  padding-block: 100px;
+  
 }
 .intro {
   width: 80%;
@@ -90,7 +91,7 @@ body {
   align-content: center;
   flex-wrap: wrap;
   align-items: center;
-  font-family: "Vina Sans", sans-serif;
+  
   margin: auto;
 }
 .intro-img {
@@ -116,7 +117,7 @@ body {
   padding-block: 20px;
 }
 .informacion-titulo {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .informacion-parrafo1 {
   padding-top: 10px;
@@ -125,7 +126,7 @@ body {
   margin: 0%;
 }
 .informacion-parrafo2 {
-  font-size: 15px;
+  
   margin: auto;
 }
 .informacion-boton {
@@ -151,7 +152,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    
     margin: auto;
     margin-top: 50px;
   }
@@ -163,7 +164,6 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    font-family: "Vina Sans", sans-serif;
     margin: auto;
   }
   .intro-soy {
@@ -181,53 +181,65 @@ body {
 }
 /*seccion conocimientos*/
 .conocimiento {
-  width: 100%;
+
   text-align: center;
-  display: flex;
+  margin: auto;
   flex-direction: column;
+  padding-block:20px ;
+
+  
+
+}
+.conocimiento h2{
+    margin-bottom: 20px;
 }
 .container {
-  width: 100%;
-  display: flex;
+    display: flex;
+
   margin-top: auto;
   flex-wrap: wrap;
-  align-content: space-between;
+  align-content: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }
+
 .container-foto {
   width: 130px;
   height: 130px;
   display: flex;
   border: 2px solid black;
   flex-direction: column;
-  margin-bottom: 20px;
-  margin-right: 10px;
-  margin-top: 20px;
   justify-content: center;
 }
 .container-foto img {
-  width: 100%;
+  
   aspect-ratio: 16/9;
   object-fit: contain;
   object-position: center;
 }
+.container-foto :hover{
+    background-color: #ef5973;
+}
 /*@media de conocimiento*/
 @media (min-width: 970px) {
   .conocimiento {
-    width: 100%;
+    
     text-align: center;
     align-items: center;
     margin-top: 50px;
+    gap: 20px;
   }
   .conocimiento h2 {
     font-size: 2.5rem;
+    padding-bottom: 50px;
   }
   .container {
     width: 60%;
     display: flex;
-    margin-top: auto;
-    margin-top: 40px;
+    margin: auto;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
   }
   .container-foto {
@@ -247,7 +259,7 @@ body {
 /*seccion frase*/
 .frase {
   display: flex;
-  width: 100%;
+  
   background-color: pink;
   margin-top: 100px;
   margin-bottom: 50px;
@@ -284,7 +296,7 @@ blockquote h4 {
 @media (min-width: 970px) {
   .frase {
     display: flex;
-    width: 100%;
+    
     background-color: pink;
   }
   .frase div {
@@ -316,23 +328,27 @@ blockquote h4 {
 }
 /*seccion de mis proyectos*/
 .proyectos {
-  width: 100%;
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
   flex-direction: column;
+  
+  margin: auto;
 }
 .proyecto-container {
   width: 80%;
   display: flex;
-  margin-right: 20px;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  margin-top: 50px;
+  max-width: 940px;
+  margin: auto;
+  gap: 20px;
+
 }
 .cuadro {
   width: 300px;
@@ -342,8 +358,7 @@ blockquote h4 {
   flex-wrap: wrap;
   align-content: center;
   border: 1px solid pink;
-  margin-right: 20px;
-  margin-top: 20px;
+
   background-color: pink;
 }
 .cuadro img {
@@ -357,16 +372,20 @@ blockquote h4 {
   color: black;
 }
 .proyectos h2 {
-  font-size: 3rem;
+  
   margin-bottom: 40px;
 }
 .proyectos p {
-  font-size: 1rem;
+  
+  padding-bottom: 50px;
+}
+.cuadro p{
+    font-size: 10px;
 }
 /*@media de mis proyectos*/
 @media (min-width: 970px) {
   .proyectos {
-    width: 100%;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -380,18 +399,18 @@ blockquote h4 {
   flex-direction: column;
   padding-top: 100px;
   border-radius: 20px;
+  padding-block: 20px;
 }
 .contactame-container {
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 90%;
   justify-content: center;
   border-radius: 10px;
 }
 .redes {
   display: flex;
-  width: 100%;
+  width: 500px;
   flex-direction: column;
   margin-right: 10px;
   border-radius: 20px;
@@ -411,7 +430,7 @@ blockquote h4 {
   display: flex;
 }
 .redes-iconos img img {
-  width: 100%;
+  
   aspect-ratio: 16/9;
   object-fit: contain;
   object-position: center;
@@ -424,7 +443,7 @@ blockquote h4 {
 }
 .formulario {
   display: flex;
-  width: 100%;
+  width: 500px;
   justify-content: flex-start;
   flex-wrap: wrap;
   border-radius: 20px;
@@ -493,9 +512,10 @@ blockquote h4 {
 }
 .formulario-mensaje {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
+  margin-top: 10px;
 }
 .formulario-mensaje label {
   margin-top: 10px;
@@ -507,6 +527,11 @@ blockquote h4 {
   height: 30px;
   margin-top: 10px;
 }
+textarea {
+    border-radius: 10px;
+    display: flex;
+    margin-top: 10px;
+  }
 
 .enviar {
   margin-top: 20px;
@@ -523,7 +548,7 @@ blockquote h4 {
   display: flex;
 }
 /*@media de contactame tambien incluye formulario*/
-@media (min-width: 900px) {
+@media (min-width: 970px) {
   .contactame {
     display: flex;
     justify-content: flex-start;
@@ -543,7 +568,7 @@ blockquote h4 {
   }
   .redes {
     display: flex;
-    width: 100%;
+    
     flex-direction: column;
     margin-right: 10px;
     border-radius: 20px;
@@ -580,7 +605,7 @@ blockquote h4 {
 
   .formulario {
     display: flex;
-    width: 100%;
+    
     justify-content: flex-start;
     flex-wrap: wrap;
     border-radius: 20px;
@@ -649,7 +674,7 @@ blockquote h4 {
     flex-wrap: wrap;
   }
   .formulario-mensaje {
-    width: 100%;
+    
     border-radius: 20px;
     border-color: #f9f6f6;
     margin-top: 10px;
@@ -676,19 +701,19 @@ blockquote h4 {
 }
 /*ultima seccion del proyecto*/
 footer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  
+  
   align-content: center;
   margin-top: 20px;
   background-color: pink;
   color: black;
   height: 250px;
+  padding-block: 20px;
+  text-align: center;
 }
 
 .nav-fo {
   display: none;
-  width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -704,7 +729,7 @@ footer {
 }
 .logo-redes {
   display: flex;
-  width: 100%;
+  padding-block: 50px;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
@@ -732,7 +757,7 @@ footer p {
   display: flex;
 }
 /*@media de footer*/
-@media (min-width: 900px) {
+@media (min-width: 970px) {
   footer {
     display: flex;
     flex-direction: column;
@@ -742,11 +767,12 @@ footer p {
     background-color: pink;
     color: black;
     height: 250px;
+    
   }
 
   .nav-fo {
-    display: flex;
-    width: 100%;
+    
+    
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -763,6 +789,16 @@ footer p {
     width: 80%;
     justify-content: space-around;
     margin: auto;
+  }
+  .logo-redes li{
+    padding-right: 100px;
+
+
+
+
+  }
+  .logo-redes li :hover{
+    background-color: #b14262;
   }
   .palabra {
     margin: auto;
