@@ -25,7 +25,7 @@ En esta seccion se hizo carpetas donde se lleva a los proyectos realizados( en e
 
 ## Contactame
 En esta seccion se utilizo link que te lleva a dintintas redes sociales donde me podes contactar y ademas se hizo un formulario done podes enviarme email, todo cuenta con sus logos correspondiente 
-![imagen del formulario](imagenes.md/Captura%20web_22-11-2023_141610_127.0.0.1.jpeg)
+![imagen del formulario](imagenes.md/Captura%20web_30-11-2023_131351_127.0.0.1.jpeg)
 
 ## Finalizacion del proyecto 
 En esta seccion es como un pie de pagina donde podes no solo ver de que manera contactame sino tambien te lleva a diferentes lugares del porfolio sin tener que scrollear

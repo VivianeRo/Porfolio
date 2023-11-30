@@ -128,6 +128,7 @@ body {
 .informacion-parrafo2 {
   
   margin: auto;
+  font-size: 10px;
 }
 .informacion-boton {
   border-radius: 20px;
@@ -178,6 +179,9 @@ body {
   .informacion-parrafo1 {
     font-size: 40px;
   }
+  .informacion-parrafo2{
+    font-size: 15px;
+  }
 }
 /*seccion conocimientos*/
 .conocimiento {
@@ -203,6 +207,9 @@ body {
   flex-direction: column;
   gap: 20px;
 }
+.container :hover{
+  background-color: pink;
+}
 
 .container-foto {
   width: 130px;
@@ -218,9 +225,7 @@ body {
   object-fit: contain;
   object-position: center;
 }
-.container-foto :hover{
-    background-color: #ef5973;
-}
+
 /*@media de conocimiento*/
 @media (min-width: 970px) {
   .conocimiento {
@@ -249,6 +254,7 @@ body {
     border: 2px solid black;
     justify-content: center;
   }
+  
   .container-foto img {
     width: 100%;
     aspect-ratio: 16/9;
@@ -350,6 +356,9 @@ blockquote h4 {
   gap: 20px;
 
 }
+.proyecto-container :hover{
+  background-color: #ef5973;
+}
 .cuadro {
   width: 300px;
   height: 300px;
@@ -361,6 +370,9 @@ blockquote h4 {
 
   background-color: pink;
 }
+
+
+
 .cuadro img {
   width: 100%;
   aspect-ratio: 16/9;
@@ -400,6 +412,8 @@ blockquote h4 {
   padding-top: 100px;
   border-radius: 20px;
   padding-block: 20px;
+  
+  
 }
 .contactame-container {
   display: flex;
@@ -407,14 +421,16 @@ blockquote h4 {
   margin: auto;
   justify-content: center;
   border-radius: 10px;
+  
+
 }
 .redes {
   display: flex;
-  width: 500px;
   flex-direction: column;
   margin-right: 10px;
   border-radius: 20px;
   background-color: #f9f6f6;
+  
 }
 
 .redes-iconos {
@@ -443,12 +459,12 @@ blockquote h4 {
 }
 .formulario {
   display: flex;
-  width: 500px;
   justify-content: flex-start;
   flex-wrap: wrap;
   border-radius: 20px;
   background-color: #f9f6f6;
   margin-top: 20px;
+  
 }
 .formulario h2 {
   font-size: 1.5rem;
@@ -562,9 +578,9 @@ textarea {
     display: flex;
     flex-direction: row;
     margin: auto;
-    width: 80%;
     justify-content: center;
     border-radius: 10px;
+    width: 80%;
   }
   .redes {
     display: flex;
@@ -573,6 +589,7 @@ textarea {
     margin-right: 10px;
     border-radius: 20px;
     background-color: #f9f6f6;
+    width: 50%;
   }
   .redes h2 {
     font-size: 40px;
@@ -605,7 +622,7 @@ textarea {
 
   .formulario {
     display: flex;
-    
+    width: 50%;
     justify-content: flex-start;
     flex-wrap: wrap;
     border-radius: 20px;
@@ -618,7 +635,7 @@ textarea {
 
   .formulario-contacto {
     display: flex;
-    width: 80%;
+    
     flex-wrap: wrap;
     flex-direction: row;
   }
@@ -658,7 +675,7 @@ textarea {
   .formulario-email {
     display: flex;
     flex-direction: column;
-    width: 100%;
+  
     margin-bottom: 10px;
   }
   .formulario-email input {
