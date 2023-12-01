@@ -32,5 +32,5 @@ En esta seccion es como un pie de pagina donde podes no solo ver de que manera c
 ![imagen de la finalizacion del porfolio](imagenes.md/Captura%20web_22-11-2023_141731_127.0.0.1.jpeg)
 
 Espero que les haya gustado mi primero proyecto.Adjunto una imagen de como se ve el porfolio
-![imagen completa del porfolio](imagenes.md/Captura%20web_22-11-2023_163324_127.0.0.1.jpeg)
+![imagen completa del porfolio](imagenes.md/Captura%20web_22-11-2023_141034_127.0.0.1.jpeg)
 
