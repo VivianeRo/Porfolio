@@ -16,7 +16,7 @@ En esta seccion se utilizo imagenes en svg en demostracion de los conocimiento q
 ![imagenes de lenguales de programacion](imagenes.md/Captura%20web_22-11-2023_16136_127.0.0.1.jpeg)
 
 ## Frase
-En esta parte nos pidieron que pusieramos una frase con que nos indenticara 
+En esta parte nos pidieron que pusieramos una frase con que nos indentificara 
 ![imagen de la frase](imagenes.md/Captura%20web_22-11-2023_16175_127.0.0.1.jpeg)
 
 ## Mis proyectos 

@@ -30,6 +30,8 @@ body {
   font-size: 1.5em;
   color: black;
   display: none;
+  overflow: hidden;
+  transition: 0.2s;
 }
 .nav-contacto {
   background-color: rgb(228, 149, 162);
@@ -38,6 +40,9 @@ body {
 .nav a:hover {
   background-color: rgb(226, 56, 175);
   border-radius: 10px;
+  box-shadow: 0 0 10px rgb(226, 56, 175),0 0 40px rgb(226, 56, 175), 0 0 80px rgb(226, 56, 175);
+  transition-delay: 1s;
+
 }
 /*@media de nav*/
 @media (min-width: 970px) {
@@ -57,14 +62,20 @@ body {
     margin-right: 30px;
     font-size: 1.5em;
     color: black;
+    overflow: hidden;
+    transition: 0,2s;
   }
   .nav-contacto {
     background-color: rgb(228, 149, 162);
     border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .nav a:hover {
     background-color: rgb(226, 56, 175);
     border-radius: 10px;
+    box-shadow: 0 0 10px rgb(226, 56, 175),0 0 40px rgb(226, 56, 175), 0 0 80px rgb(226, 56, 175);
+  transition-delay: 1s;
   }
   nav ul {
     display: flex;
@@ -134,18 +145,27 @@ body {
   border-radius: 20px;
   width: 150px;
   height: 30px;
-  color: rgb(230, 97, 119);
+  color: rgb(36, 31, 32);
   border: 2px solid rgb(230, 97, 119);
   background-color: pink;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  transition: 0.2s;
 }
-.informacion-boton a {
+.informacion-boton  {
   color: black;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: large;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.2s;
 }
-.informacion-boton a:hover {
+.informacion-boton:hover {
   background-color: rgb(226, 56, 175);
   border-radius: 20px;
+  box-shadow: 0 0 10px rgb(226, 56, 175),0 0 40px rgb(226, 56, 175), 0 0 80px rgb(226, 56, 175);
+  transition-delay: 1s;
 }
 /*@media de la presentacion*/
 @media (min-width: 970px) {
@@ -158,29 +178,31 @@ body {
     margin-top: 50px;
   }
   .intro {
-    width: 80%;
+    width: 100%;
     display: flex;
     margin-top: 100px;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-end;
     margin: auto;
   }
   .intro-soy {
-    width: 350px;
-    height: 300px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    margin: auto;
+    margin:0;
+    align-items: flex-start;
   }
   .informacion-parrafo1 {
-    font-size: 40px;
+    font-size: 50px;
   }
   .informacion-parrafo2{
     font-size: 15px;
+    margin: 0;
+    padding-block: 20px;
   }
 }
 /*seccion conocimientos*/
@@ -206,9 +228,13 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 20px;
+  overflow: hidden;
+  transition: 0.2s;
 }
 .container :hover{
   background-color: pink;
+  box-shadow: 0 0 10px rgb(226, 56, 175),0 0 40px rgb(226, 56, 175), 0 0 80px rgb(226, 56, 175);
+  transition-delay: 1s;
 }
 
 .container-foto {
@@ -240,7 +266,7 @@ body {
     padding-bottom: 50px;
   }
   .container {
-    width: 60%;
+    width: 80%;
     display: flex;
     margin: auto;
     flex-wrap: wrap;
@@ -253,6 +279,7 @@ body {
     display: flex;
     border: 2px solid black;
     justify-content: center;
+    max-width: 940px;
   }
   
   .container-foto img {
@@ -354,10 +381,14 @@ blockquote h4 {
   max-width: 940px;
   margin: auto;
   gap: 20px;
+  overflow: hidden;
+  transition: 0.2s;
 
 }
 .proyecto-container :hover{
   background-color: #ef5973;
+  box-shadow: 0 0 10px rgb(226, 56, 175),0 0 40px rgb(226, 56, 175), 0 0 80px rgb(226, 56, 175);
+  transition-delay: 1s;
 }
 .cuadro {
   width: 300px;
@@ -518,6 +549,7 @@ blockquote h4 {
 .formulario-email label {
   display: flex;
   margin-top: 10px;
+  padding-left: 20px;
 }
 .formulario-email input {
   height: 30px;
@@ -535,6 +567,7 @@ blockquote h4 {
 }
 .formulario-mensaje label {
   margin-top: 10px;
+  padding-left: 20px;
 }
 .formulario-mensaje input {
   width: 100%;
@@ -562,6 +595,12 @@ textarea {
   width: 100px;
   height: 30px;
   display: flex;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.envia :hover{
+  box-shadow: 0 0 10px rgb(226, 56, 175),0 0 40px rgb(226, 56, 175), 0 0 80px rgb(226, 56, 175);
+  transition-delay: 1s;
 }
 /*@media de contactame tambien incluye formulario*/
 @media (min-width: 970px) {
@@ -594,6 +633,10 @@ textarea {
   .redes h2 {
     font-size: 40px;
     margin-bottom: 2.5rem;
+    padding-left: 20px;
+  }
+  .redes p{
+    padding-left: 20px;
   }
 
   .redes-iconos {
@@ -601,6 +644,7 @@ textarea {
     flex-direction: column;
     align-items: flex-start;
     margin-top: 30px;
+    margin-left: 20px;
   }
   .redes-iconos img {
     width: 18px;
@@ -631,6 +675,7 @@ textarea {
   }
   .formulario h2 {
     font-size: 2.5rem;
+    padding-left: 20px;
   }
 
   .formulario-contacto {
@@ -646,6 +691,7 @@ textarea {
     flex-wrap: wrap;
     align-content: flex-start;
     margin-right: 10px;
+    padding-left: 20px;
   }
   .formulario-nombre label {
     padding-left: 10px;
@@ -655,7 +701,7 @@ textarea {
     border-radius: 20px;
     border-color: #f9f6f6;
     margin-bottom: 10px;
-    margin-bottom: 10px;
+    padding-left: 20px;
   }
   .formulario-apellido {
     display: flex;
@@ -670,11 +716,13 @@ textarea {
     border-radius: 20px;
     border-color: #f9f6f6;
     margin-bottom: 10px;
+    padding-left: 20px;
   }
 
   .formulario-email {
     display: flex;
     flex-direction: column;
+    padding-left: 20px;
   
     margin-bottom: 10px;
   }
@@ -683,6 +731,7 @@ textarea {
     border-radius: 20px;
     border-color: #f9f6f6;
     margin-top: 10px;
+    padding-left: 20px;
   }
 
   .formulario-mensaje {
@@ -695,6 +744,7 @@ textarea {
     border-radius: 20px;
     border-color: #f9f6f6;
     margin-top: 10px;
+    padding-left: 20px;
   }
   textarea {
     border-radius: 10px;
@@ -714,6 +764,7 @@ textarea {
     width: 100px;
     height: 40px;
     display: flex;
+    margin-left: 20px;
   }
 }
 /*ultima seccion del proyecto*/
@@ -729,13 +780,13 @@ footer {
   text-align: center;
 }
 
-.nav-fo {
+.nav-footer {
   display: none;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
-.nav-fo a {
+.nav-footer a {
   text-decoration: none;
   padding-right: 15px;
   color: #b14262;
@@ -776,18 +827,18 @@ footer p {
 /*@media de footer*/
 @media (min-width: 970px) {
   footer {
-    display: flex;
+    display: block;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
     margin-top: 20px;
     background-color: pink;
     color: black;
-    height: 250px;
+    height: 100%;
     
   }
 
-  .nav-fo {
+  .nav-footer {
     
     
     flex-direction: row;
@@ -796,10 +847,22 @@ footer p {
     font-size: 2rem;
     margin-bottom: 50px;
   }
-  .nav-fo a {
+  .nav-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-footer a {
     text-decoration: none;
     padding-right: 15px;
-    color: #b14262;
+    color:black;
+    overflow: hidden;
+    transition: 0.2s;
+  }
+  .nav-footer a:hover{
+    box-shadow: 0 0 10px rgb(226, 56, 175),0 0 40px rgb(226, 56, 175), 0 0 80px rgb(226, 56, 175);
+  transition-delay: 1s;
   }
   .logo-redes {
     display: flex;
@@ -816,6 +879,8 @@ footer p {
   }
   .logo-redes li :hover{
     background-color: #b14262;
+    box-shadow: 0 0 10px rgb(226, 56, 175),0 0 40px rgb(226, 56, 175), 0 0 80px rgb(226, 56, 175);
+  transition-delay: 1s;
   }
   .palabra {
     margin: auto;
@@ -826,6 +891,8 @@ footer p {
   textarea {
     border-radius: 10px;
     display: flex;
+    padding-left: 20px;
+    padding-top: 20px;
   }
 }
 
