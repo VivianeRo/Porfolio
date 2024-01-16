@@ -94,7 +94,7 @@ body {
   
 }
 .intro {
-  width: 80%;
+
   display: flex;
   margin-top: 100px;
   flex-direction: column;
@@ -109,6 +109,7 @@ body {
   width: 300px;
   height: 300px;
   display: flex;
+  margin-top: 100px;
 }
 .intro-img img {
   object-fit: cover;
@@ -139,7 +140,7 @@ body {
 .informacion-parrafo2 {
   
   margin: auto;
-  font-size: 10px;
+  
 }
 .informacion-boton {
   border-radius: 20px;
@@ -225,9 +226,10 @@ body {
   margin-top: auto;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 20px;
+  justify-content: space-evenly;
+  flex-direction: row;
+  gap: 30px;
+  padding-top: 100px;
   overflow: hidden;
   transition: 0.2s;
 }
@@ -272,6 +274,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    
   }
   .container-foto {
     width: 250px;
@@ -368,19 +371,21 @@ blockquote h4 {
   align-items: center;
   margin-top: 50px;
   flex-direction: column;
+  padding-top: 100px;
   
   margin: auto;
 }
 .proyecto-container {
-  width: 80%;
+  
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   text-align: center;
   max-width: 940px;
   margin: auto;
-  gap: 20px;
+  gap: 100px;
+  margin-bottom: 100px;
   overflow: hidden;
   transition: 0.2s;
 
@@ -417,10 +422,14 @@ blockquote h4 {
 .proyectos h2 {
   
   margin-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .proyectos p {
   
   padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .cuadro p{
     font-size: 10px;
@@ -434,6 +443,65 @@ blockquote h4 {
     justify-content: center;
     align-items: center;
   }
+  .proyecto-container {
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    max-width: 940px;
+    margin: auto;
+    gap: 20px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    transition: 0.2s;
+  
+  }
+  .proyecto-container :hover{
+    background-color: #ef5973;
+    box-shadow: 0 0 10px rgb(226, 56, 175),0 0 40px rgb(226, 56, 175), 0 0 80px rgb(226, 56, 175);
+    transition-delay: 1s;
+  }
+  .cuadro {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    border: 1px solid pink;
+  
+    background-color: pink;
+  }
+  
+  
+  
+  .cuadro img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    object-position: center;
+  }
+  .cuadro a {
+    text-decoration: none;
+    color: black;
+  }
+  .proyectos h2 {
+    
+    margin-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .proyectos p {
+    
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .cuadro p{
+      font-size: 10px;
+}
 }
 /*seccion de donde contactame tambien incluye formulario*/
 .contactame {
@@ -455,13 +523,24 @@ blockquote h4 {
   
 
 }
+
+
+
 .redes {
   display: flex;
   flex-direction: column;
-  margin-right: 10px;
   border-radius: 20px;
   background-color: #f9f6f6;
+  padding-block: 20px;
   
+}
+.redes h2{
+  font-size: 2.5rem;
+  margin: auto;
+}
+.redes p{
+  padding-top: 50px;
+  padding-left: 10px;
 }
 
 .redes-iconos {
@@ -469,6 +548,8 @@ blockquote h4 {
   flex-direction: column;
   align-items: flex-start;
   margin-top: 30px;
+  margin-left: 10px;
+  padding-block: 20px;
 }
 
 .redes-iconos img {
@@ -490,15 +571,17 @@ blockquote h4 {
 }
 .formulario {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   border-radius: 20px;
   background-color: #f9f6f6;
-  margin-top: 20px;
+  margin-top: 50px;
   
 }
 .formulario h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .formulario-contacto {
@@ -506,6 +589,7 @@ blockquote h4 {
   width: 100%;
   flex-wrap: wrap;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .formulario-nombre {
@@ -518,12 +602,16 @@ blockquote h4 {
 .formulario-nombre label {
   margin-top: 10px;
   display: flex;
+  padding-left: 10px;
 }
 .formulario-nombre input {
   height: 30px;
+  width: 100%;
   border-radius: 20px;
   border-color: #f9f6f6;
   margin-top: 10px;
+  margin-left: 10px;
+  padding-left: 10px;
 }
 .formulario-apellido {
   display: flex;
@@ -531,20 +619,22 @@ blockquote h4 {
 }
 .formulario-apellido label {
   display: flex;
-  margin-top: 10px;
+  margin-top: 40px;
+  padding-left: 10px;
 }
 .formulario-apellido input {
   height: 30px;
   border-radius: 20px;
   border-color: #f9f6f6;
   margin-top: 10px;
-  width: 100%;
+  margin-left: 10px;
+  padding-left: 10px;
 }
 
 .formulario-email {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  margin-top: 10px;
 }
 .formulario-email label {
   display: flex;
@@ -555,8 +645,9 @@ blockquote h4 {
   height: 30px;
   border-radius: 20px;
   border-color: #f9f6f6;
-  width: 80%;
   margin-top: 10px;
+  margin-left: 10px;
+  padding-left: 10px;
 }
 .formulario-mensaje {
   display: flex;
@@ -580,20 +671,24 @@ textarea {
     border-radius: 10px;
     display: flex;
     margin-top: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-top: 25px;
   }
 
 .enviar {
   margin-top: 20px;
   background-color: pink;
   color: black;
-  border-radius: 10px;
+  border-radius: 30px;
   font-weight: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   display: flex;
   width: 100px;
-  height: 30px;
+  height: 4px;
+  margin-left: 20px;
   display: flex;
   overflow: hidden;
   transition: 0.2s;
@@ -629,11 +724,13 @@ textarea {
     border-radius: 20px;
     background-color: #f9f6f6;
     width: 50%;
+    
   }
   .redes h2 {
     font-size: 40px;
     margin-bottom: 2.5rem;
     padding-left: 20px;
+    margin: 0;
   }
   .redes p{
     padding-left: 20px;
@@ -708,8 +805,10 @@ textarea {
     flex-direction: column;
   }
   .formulario-apellido label {
-    margin-left: 10px;
+    margin-left: 20px;
     display: flex;
+    padding-top: 10px;
+    margin: 0;
   }
   .formulario-apellido input {
     height: 30px;
