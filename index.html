@@ -1,79 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Porfolio</title>
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Porfolio</title>
+</head>
+
+<body>
   <!--Inicio del nav-->
-    <nav class="nav">
-      <ul>
+  <nav class="nav">
+    <ul>
       <li><a href="#introduccion"> Hola</a></li>
       <li><a href="#conocimiento">Conocimientos </a></li>
       <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#contactos"   class="nav-contacto">Contacto</a></li>
-      </ul>
-    </nav>
-    <!--Inicializacion del main donde adentro va esta las secciones que voy esta utilizando-->
-    <main>
-      <!--Seccion de presentacion donde se encuentra informacion de quien soy y que hago-->
-      <section class="introduccion" id="introduccion">
-        <div class="intro">
-          <div class="intro-soy">
-            <h1 class="informacion-titulo">¡Hola Soy!</h1>
-            <p class="informacion-parrafo1">Viviane Rodriguez</p>
-            <p class="informacion-parrafo2"> 
-              Divertida, empredendora y enamorada del desarrollo web
-            </p>
-            
-              <a  class="informacion-boton" href="#proyectos">LO QUE HAGO</a>
-            
-          </div>
-          <div class="intro-img">
-            <img src="imagen/undraw_Woman_ffrd.png" alt="Foto de presensentacion"/>
-          </div>
-        </div>
-      </section>
-      <!--Seccion de mis conocimientos-->
-      <section class="conocimiento" id="conocimiento">
-        <h2>Mis conocimientos</h2>
+      <li><a href="#contactos" class="nav-contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  <!--Inicializacion del main donde adentro va esta las secciones que voy esta utilizando-->
+  <main>
+    <!--Seccion de presentacion donde se encuentra informacion de quien soy y que hago-->
+    <section class="introduccion" id="introduccion">
 
-        <div class="container">
-          <div class="container-foto">
-            <img src="imagen/icons8-html.svg" alt="Logo de Html" />
-            <h3>HTML 5</h3>
-          </div>
-          <div class="container-foto">
-            <img src="imagen/icons8-css.svg" alt="Logo de css"/>
-            <h3>CSS 3</h3>
-          </div>
-          <div class="container-foto">
-            <img src="imagen/icons8-hablar-con-descaro-a.svg" alt="Logo de sass" />
-            <h3>SASS</h3>
-          </div>
-          <div class="container-foto">
-            <img src="imagen/icons8-javascript.svg" alt="Logo de javascript"/>
-            <h3>JAVASCRIPT</h3>
-          </div>
-          <div class="container-foto">
-            <img src="iconos/react_original_logo_icon_146374.png" alt="Logo de react"/>
-            <h3>REACT</h3>
-          </div>
-          <div class="container-foto">
-            <img src="imagen/icons8-git.svg" alt="Logo de git"/>
-            <h3>GIT</h3>
-          </div>
+      <div class="intro">
+        <div class="intro-soy">
+          <h2 class="informacion-titulo">¡Hola Soy!</h2>
+          <h1 class="informacion-parrafo1">Viviane Rodriguez</h1>
+          <p class="informacion-parrafo2">
+            Divertida, empredendora y enamorada del desarrollo web.
+          </p>
+
+          <a class="informacion-boton" href="#proyectos">LO QUE HAGO</a>
+
         </div>
-      </section>
-      <!--Seccion de una frase donde me indentifico-->
-      <section class="frase">
+        <div class="intro-img">
+          <img src="imagen/undraw_Woman_ffrd.png" alt="Foto de presentacion" />
+        </div>
+
+      </div>
+    </section>
+    <!--Seccion de mis conocimientos-->
+    <section class="conocimiento" id="conocimiento">
+      <h2>Mis conocimientos</h2>
+
+      <div class="container">
+
+        <div class="container-foto">
+          <img src="imagen/icons8-html.svg" alt="Logo de Html" />
+          <h3>HTML 5</h3>
+        </div>
+        <div class="container-foto">
+          <img src="imagen/icons8-css.svg" alt="Logo de css" />
+          <h3>CSS 3</h3>
+        </div>
+        <div class="container-foto">
+          <img src="imagen/icons8-hablar-con-descaro-a.svg" alt="Logo de sass" />
+          <h3>SASS</h3>
+        </div>
+        <div class="container-foto">
+          <img src="imagen/icons8-javascript.svg" alt="Logo de javascript" />
+          <h3>JAVASCRIPT</h3>
+        </div>
+        <div class="container-foto">
+          <img src="iconos/react_original_logo_icon_146374.png" alt="Logo de react" />
+          <h3>REACT</h3>
+        </div>
+        <div class="container-foto">
+          <img src="imagen/icons8-git.svg" alt="Logo de git" />
+          <h3>GIT</h3>
+        </div>
+      </div>
+    </section>
+    <!--Seccion de una frase donde me indentifico-->
+    <section class="frase">
+      <div class="container-frase">
+        <div class="frase-img">
+          <img src="iconos/double_quotes_right_end_icon_207080.png" alt="Icono de doble comilla" />
+        </div>
         <div>
-          <div class="frase-img">
-            <img src="iconos/double_quotes_right_end_icon_207080.png" alt="Icono de doble comilla"/>
-          </div>
           <blockquote>
             <p>
               "Es mucho más difícil juzgarse a sí mismo que juzgar a los otros.
@@ -82,147 +87,152 @@
             <h4>Antoine de Saint-Exupéry</h4>
           </blockquote>
         </div>
-      </section>
-      <!--Seccion de mis proyectos-->
-      <section class="proyectos" id="proyectos">
-        <h2>Mis proyectos</h2>
-        <p>
-          Les presento mis proyectos con los conocimientos que he adquirido en
-          el transcurso de mi carrera
-        </p>
-        <div class="proyecto-container" >
-          <div class="cuadro">
-            <a href="#">
-              <img src="imagen/undraw_Portfolio_re_qwm5.png" alt="Imagen representativa de presentacion de porfolio"/>
-              <p>Porfolio</p>
-            </a>
-          </div>
-          <div class="cuadro">
-            <a href="#">
-              <img src="imagen/undraw_Like_dislike_re_dwcj.png"  alt="Imagen representativa de generador de memes"/>
-              <p>Generador de memes</p>
-            </a>
-          </div>
-          <div class="cuadro">
-            <a href="#">
-              <img src="imagen/undraw_Woman_ffrd.png" alt="Imagen representativa de macth"/>
-              <p>Macth 3</p>
-            </a>
-          </div>
-          <div class="cuadro">
-            <a href="#">
-              <img src="imagen/undraw_undraw_shopping_bags_2ude_(1)_mnw3.png" alt="Imagen representativa de controlador de gastos"/>
-              <p>Controlador de gastos</p>
-            </a>
-          </div>
-          <div class="cuadro">
-            <a href="#">
-              <img src="imagen/undraw_Usability_testing_re_uu1g.png" alt="Imagen representativa de admistrador de reuniones"/>
-              <p>Admistrador de reuniones</p>
-            </a>
-          </div>
-          <div class="cuadro">
-            <a href="#">
-              <img src="imagen/undraw_mobile_content_xvgr.png" alt="Imagen representativa de todo app"/>
-              <p>Todo App</p>
-            </a>
-          </div>
-          <div class="cuadro">
-            <a href="#">
-              <img src="imagen/undraw_video_game_night_8h8m.png" alt="Imagen representativa de buscador de pelicula" />
-              <p>Buscador de pelicula</p>
-            </a>
+      </div>
+    </section>
+    <!--Seccion de mis proyectos-->
+    <section class="proyectos" id="proyectos">
+      <h2>Mis proyectos</h2>
+      <p>
+        Les presento mis proyectos con los conocimientos que he adquirido en
+        el transcurso de mi carrera
+      </p>
+      <div class="proyecto-container">
+        <div class="cuadro">
+          <a href="#">
+            <img src="imagen/undraw_Portfolio_re_qwm5.png" alt="Imagen representativa de presentacion de porfolio" />
+            <p>Porfolio</p>
+
+          </a>
+        </div>
+        <div class="cuadro">
+          <a href="#">
+            <img src="imagen/undraw_Like_dislike_re_dwcj.png" alt="Imagen representativa de generador de memes" />
+            <p>Generador de memes</p>
+          </a>
+        </div>
+        <div class="cuadro">
+          <a href="#">
+            <img src="imagen/undraw_Woman_ffrd.png" alt="Imagen representativa de macth" />
+            <p>Macth 3</p>
+          </a>
+        </div>
+        <div class="cuadro">
+          <a href="#">
+            <img src="imagen/undraw_undraw_shopping_bags_2ude_(1)_mnw3.png"
+              alt="Imagen representativa de controlador de gastos" />
+            <p>Controlador de gastos</p>
+          </a>
+        </div>
+        <div class="cuadro">
+          <a href="#">
+            <img src="imagen/undraw_Usability_testing_re_uu1g.png"
+              alt="Imagen representativa de admistrador de reuniones" />
+            <p>Admistrador de reuniones</p>
+          </a>
+
+        </div>
+        <div class="cuadro">
+          <a href="#">
+            <img src="imagen/undraw_mobile_content_xvgr.png" alt="Imagen representativa de todo app" />
+            <p>Todo App</p>
+          </a>
+        </div>
+        <div class="cuadro">
+          <a href="#">
+            <img src="imagen/undraw_video_game_night_8h8m.png" alt="Imagen representativa de buscador de pelicula" />
+            <p>Buscador de pelicula</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--Seccion de contacto-->
+    <section class="contactame">
+      <div class="contactame-container">
+        <div class="redes">
+          <h2>Contactame</h2>
+          <p>Dejo varias alternativas para contactarme.</p>
+
+          <div class="redes-iconos">
+            <a class="email" href="https://mail.google.com/mail/u/0/#inbox">
+              <img src="iconos/icons8-gmail.svg" alt="logo de gmail" />vivianerg84@gmail.com</a>
+
+            <a class="github" href="https://github.com/VivianeRo">
+              <img src="iconos/icons8-github.svg" alt="logo de github" />VivianeRo</a>
+
+            <a class="linkedin"
+              href="https://www.linkedin.com/in/viviane-rodr%C3%ADguez-b85716264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+              <img src="iconos/icons8-linkedin.svg" alt="logo de linkedin" />/viviane-rodríguez</a>
           </div>
         </div>
-      </section>
-      <!--Seccion de contacto-->
-      <section class="contactame">
-        <div class="contactame-container">
-          <div class="redes">
-            <h2>Contactame</h2>
-            <p>Dejo varias alternativas para contactarme.</p>
 
-            <div class="redes-iconos">
-              <a class="email" href="https://mail.google.com/mail/u/0/#inbox">
-                <img src="iconos/icons8-gmail.svg" alt="logo de gmail" />vivianerg84@gmail.com</a
-              >
+        <div class="formulario" id="contactos">
+          <h2>Escribime</h2>
 
-              <a class="github" href="https://github.com/VivianeRo">
-                <img src="iconos/icons8-github.svg" alt="logo de github" />VivianeRo</a
-              >
+          <form action="https://submit-form.com/dZv3lZKLnN2eByG6HXaMj" method="POST" class="formulario-contacto">
 
-              <a
-                class="linkedin"
-                href="https://www.linkedin.com/in/viviane-rodr%C3%ADguez-b85716264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-              >
-                <img src="iconos/icons8-linkedin.svg" alt="logo de linkedin" />/viviane-rodríguez</a
-              >
-            </div>
-          </div>
-          <div class="formulario" id="contactos">
-            <h2>Escribime</h2>
-            
-            <form action="https://submit-form.com/dZv3lZKLnN2eByG6HXaMj" method="POST" class="formulario-contacto">
-
-             <div class="formulario-nombre">
+            <div id="contacto">
+              <div class="formulario-nombre">
                 <label for="nombre">Nombre:</label>
-                <input type="text" name="Nombre"
-                class="nombre" id="nombre"
-                placeholder="Escriba su nombre" required=""> 
-               
-            </div>
-            <div class=" formulario-apellido">
+                <input type="text" name="Nombre" class="nombre" id="nombre" placeholder="Escriba su nombre" required="">
+
+              </div>
+              <div class=" formulario-apellido">
                 <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido"
-                class="apellido" id="apellido"
-                placeholder="Escriba su apellido " required="">
-                
+                <input type="text" name="apellido" class="apellido" id="apellido" placeholder="Escriba su apellido "
+                  required="">
+              </div>
             </div>
+
             <div class="formulario-email">
-                <label for="email">Email:</label>
-                <input type="email" name="email"
-                class="email" id="email" 
-                placeholder="Escriba su email" required="">
+              <label for="email">Email:</label>
+              <input type="email" name="email" class="email" id="email" placeholder="Escriba su email" required="">
             </div>
             <div class="formulario-mensaje">
-                <label for="mensaje">Mensaje:</label>
-                <textarea name="mensaje" cols="30" rows="10"
-                class="mensaje" id="mensaje" 
+              <label for="mensaje">Mensaje:</label>
+              <textarea name="mensaje" cols="30" rows="10" class="mensaje" id="mensaje"
                 placeholder="Escriba su mensaja aqui"></textarea>
-                
+
             </div>
             <button type="submit" class="enviar"> Enviar </button>
-            </form>
-        </div>
-      </section>
-      <!--Finalizaccion de proyecto porfolio ademas incluye link de contacto y quien lo hizo-->
-      <footer>
         
-        <nav class="nav-footer">
-          <ul>
-                 
-              <li> <a href="#introduccion"> Hola</a></li>
-              <li> <a href="#conocimiento">Conocimientos </a></li>
-              <li> <a href="#proyectos">Proyectos</a></li>
-              <li> <a href="#contacto">Contacto</a></li>
-            
-         </ul>
-        </nav>
+        </form>
+      </div>
+      </div>
+    </section>
+    <!--Finalizaccion de proyecto porfolio ademas incluye link de contacto y quien lo hizo-->
+    <footer>
 
-        <div class="logo-redes">
-          <ul>
-        
-           <li><a href="https://mail.google.com/mail/u/0/#inbox"><img src="iconos/icons8-gmail.svg" alt="Logo de gmail" /></a></li>
-          
-           <li> <a href="https://github.com/VivianeRo"><img src="iconos/icons8-github.svg" alt="Logo de github"/></a></li>
-          
-           <li><a href="https://www.linkedin.com/in/viviane-rodr%C3%ADguez-b85716264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="iconos/icons8-linkedin.svg" alt="Logo de linkedin" /></a></li>
-          </ul>
-        </div>
-        <div class="palabra">
-          <p>" Hecho con ❤️ por Viviane"</p>
-        </div>
-      </footer>
-    </main>
-  </body>
+      <nav class="nav-footer">
+        <ul>
+
+          <li> <a href="#introduccion"> Hola</a></li>
+          <li> <a href="#conocimiento">Conocimientos </a></li>
+          <li> <a href="#proyectos">Proyectos</a></li>
+          <li> <a href="#contacto">Contacto</a></li>
+
+        </ul>
+      </nav>
+
+      <div class="logo-redes">
+        <ul>
+
+          <li><a href="https://mail.google.com/mail/u/0/#inbox"><img src="iconos/icons8-gmail.svg"
+                alt="Logo de gmail" /></a></li>
+
+          <li> <a href="https://github.com/VivianeRo"><img src="iconos/icons8-github.svg" alt="Logo de github" /></a>
+          </li>
+
+          <li><a
+              href="https://www.linkedin.com/in/viviane-rodr%C3%ADguez-b85716264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img
+                src="iconos/icons8-linkedin.svg" alt="Logo de linkedin" /></a></li>
+        </ul>
+      </div>
+      <div class="palabra">
+        <p>" Hecho con ❤️ por Viviane"</p>
+      </div>
+    </footer>
+  </main>
+</body>
+
+
 </html>
